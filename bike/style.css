@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+}
+
+
+  .wheel{
+    animation: myanim 1s linear infinite ;
+    transform-origin:center;
+    transform-box:fill-box ;
+  }
+
+  @keyframes myanim {
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+  }
+.move{
+  position: absolute;
+  left: 0;
+ animation: movebike 6s linear ;
+
+}
+@keyframes movebike {
+  0%{left:0}
+  100%{left: 1000px;}
+}
+/*.leg{
+  animation: leganim 2s linear infinite;
+  transform-origin:center;
+  transform-box:fill-box ;
+}
+@keyframes leganim {
+  0%{transform: rotateZ(0deg);}
+  100%{transform: rotateZ(20deg);}
+}*/

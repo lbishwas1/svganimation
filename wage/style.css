@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+
+  #beam{
+    animation: myanim 10s ease-in;
+    transform-origin:center;
+    transform-box:fill-box ;
+  }
+
+  @keyframes myanim {
+      
+    0%{transform: rotateZ(0deg);}
+    10%{transform: rotateZ(-10deg);}
+    20%{transform: rotateZ(0deg);}
+    30%{transform: rotateZ(10deg);}
+    40%{transform: rotateZ(0deg);}
+    50%{transform: rotateZ(-10deg);}
+    60%{transform: rotateZ(0deg);}
+    70%{transform: rotateZ(+10deg);}
+    80%{transform: rotateZ(0deg);}
+    90%{transform: rotateZ(-10deg);}
+    100%{transform: rotateZ(-10deg);}
+  }
+  #right{
+      animation: myanim 2s ease-in;
+      transform-origin:center;
+      transform-box:fill-box ;
+  }
