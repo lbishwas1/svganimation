@@ -1,8 +1,6 @@
 body{
-    text-align: center;
+  overflow-x: hidden;
 }
-
-
   .wheel{
     animation: myanim 1s linear infinite ;
     transform-origin:center;
@@ -16,7 +14,7 @@ body{
 .move{
   position: absolute;
   left: 0;
- animation: movebike 6s linear ;
+ animation: movebike 6s linear infinite;
 
 }
 @keyframes movebike {
