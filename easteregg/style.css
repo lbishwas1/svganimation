@@ -1,0 +1,63 @@
+body{
+    text-align: center;
+}
+
+
+  .lhand{
+    animation: myanim 1s linear infinite;
+
+    transform-origin:center;
+    transform-box: fill-box;
+  }
+ 
+  @keyframes myanim { 
+    0%{ transform: rotateZ(0deg); } 
+    50% { transform: rotateZ(-10deg); }
+    100% { transform: rotateZ(0deg); }
+}
+
+.rhand{
+  animation: myanim1 1s linear infinite;
+  transform-origin:center;
+  transform-box:fill-box ;
+}
+
+@keyframes myanim1 { 
+  0%{ transform: rotateZ(0deg); } 
+    50% { transform: rotateZ(10deg); }
+    100% { transform: rotateZ(0deg); }
+}
+.shell{
+  animation: shellanim 4s linear infinite;
+
+    transform-origin:center;
+    transform-box: fill-box;
+}
+@keyframes shellanim { 
+  0%{ transform: rotateZ(0deg); } 
+    50% { transform: rotateZ(3deg); }
+    100% { transform: rotateZ(0deg); }
+}
+.beak{
+  animation: beakanim 1s linear infinite;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+@keyframes beakanim { 
+  0%{ transform: translateY(0px); } 
+    50% { transform: translateY(1px); }
+    100% { transform: translateY(0px); }
+}
+.eye{
+  animation: eyeanim 4s linear infinite;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+@keyframes eyeanim { 
+  0%{
+    transform: translateX(0px); } 
+    50% {
+      fill:#ffd200; 
+      transform: translateX(1px); }
+    100% { transform: translateX(0px); }
+}

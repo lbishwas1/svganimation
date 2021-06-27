@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+
+
+  #red-car{
+    animation: myanim 4s linear infinite;
+  }
+ 
+  @keyframes myanim { 
+    0%{ transform: translate(921px, 1052.809px); } 
+    100%{ transform: translate(1950.401px, 440.809px); } 
+}
+
+
+#yellow-car{
+  animation: myanim1 4s linear infinite;
+}
+
+@keyframes myanim1 { 
+  0%{ transform: translate(1884.401px, 525.809px); } 
+  100%{ transform: translate(1000px, 1052.809px); } 
+}
+#blue-car{
+  animation: myanim2 4s linear infinite;
+}
+
+@keyframes myanim2 { 
+  0%{ transform: translate(1902.357px, 970.217px); } 
+  100%{ transform: translate(220px,0px); } 
+}

@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    overflow: hidden;
+}
+
+
+  .animation{
+    background: url(dog-walk.svg);
+    width: 220px;
+    height: 256px;
+    transform: translate3D(200px, 50px, 0);
+    animation: walk-cycle 0.78s steps(9) infinite;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  
+  @keyframes walk-cycle { 
+    100% { background-position: 0 -2386px; }
+  }
+  .move{
+    animation: moving 5s linear infinite;
+  }
+   
+  @keyframes moving { 
+    0% { transform:translateX(0px) ; }
+    50% { transform:translateX(750px) ; }
+    100% { transform:translateX(1500px) ;  }
+  }

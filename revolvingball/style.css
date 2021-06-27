@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+}
+
+
+  .ball2{
+    animation: myanim 2s linear infinite;
+    transform-origin:center;
+    transform: rotateY(180deg);
+    transform-box:fill-box ;
+  }
+  .ball1{
+    animation: myanim1 2s linear infinite;
+    transform-origin:center;
+    transform-box:fill-box ;
+  }
+  .ball{
+    animation: myanim3 2s linear infinite;
+
+    transform: rotateY(0deg);
+    transform-origin:center;
+    transform-box:fill-box ;
+  }
+  @keyframes myanim1 { 
+    from { 
+        transform: rotateY(0deg); 
+    } to { 
+        transform: rotateY(360deg); 
+    }
+}
+@keyframes myanim3 { 
+  from { 
+      transform: rotateY(45deg); 
+  } to { 
+      transform: rotateY(405deg); 
+  }
+}
+
+@keyframes myanim { 
+  from { 
+      transform: rotateY(90deg); 
+  } to { 
+      transform: rotateY(450deg); 
+  }
+}

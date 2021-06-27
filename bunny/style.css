@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+
+
+  .carrot{
+    animation: myanim1 2s linear;
+    transform-origin:center;
+    transform-box:fill-box ;
+  }
+  
+  @keyframes myanim1 { 
+    from { 
+        transform: translate(0px,0px); 
+    } to { 
+        transform: translate(-20px,-40px);
+        visibility: hidden; 
+    }
+}
+.ear{
+  animation: earanim 2s linear infinite;
+  transform-origin:center;
+  transform-box:fill-box ;
+}
+
+@keyframes earanim { 
+  0% { 
+      transform: rotateZ(0deg); 
+  } 50% { 
+      transform: rotateZ(-10deg); 
+  }
+  100% { 
+    transform: rotateZ(0deg); 
+
+}
+}
+.head{
+  animation: earanim 2s linear infinite;
+  transform-origin:center;
+  transform-box:fill-box ;
+}
+.tail{
+  animation: earanim 0.5s linear infinite;
+  transform-origin:center;
+  transform-box:fill-box ;
+}
