@@ -1,0 +1,56 @@
+body{
+  overflow-x: hidden;
+
+}
+  .wheel{
+    animation: myanim 1s linear infinite ;
+    transform-origin:center;
+    transform-box:fill-box ;
+  }
+
+  @keyframes myanim {
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+  }
+.move{
+  position: absolute;
+  left: 0;
+ animation: movebike 6s linear infinite;
+}
+.st26{
+  fill:white;
+}
+.tie{
+  animation: flying 1s linear infinite;
+  transform-origin:center;
+}
+@keyframes flying{
+  0%{transform:rotate(0deg);}
+  50%{transform: rotate(-2deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes movebike {
+  0%{left:-350px;
+    transform:rotate(0deg);
+  }
+  15%{
+    transform:rotate(-15deg);
+  }
+  30%{
+    transform:rotate(0deg);
+  }
+
+  100%{left: 1000px;
+    transform:rotate(0deg);
+
+  }
+}
+/*.leg{
+  animation: leganim 2s linear infinite;
+  transform-origin:center;
+  transform-box:fill-box ;
+}
+@keyframes leganim {
+  0%{transform: rotateZ(0deg);}
+  100%{transform: rotateZ(20deg);}
+}*/
