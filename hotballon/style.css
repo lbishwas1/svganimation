@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+
+  .ballon{
+    animation: myanim 8s linear infinite;
+  }
+ 
+  @keyframes myanim { 
+    0%{transform: translateY(400px);}
+    100%{transform: translateY(-400px);}
+}
+
+.ballon1{
+  animation: myanim 8s linear infinite;
+}
+.hand{
+  animation: handanim 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes handanim {
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(5deg);}
+  100%{transform: rotateZ(0deg);}
+
+  
+}
