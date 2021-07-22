@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+
+.box{
+  animation: fly 10s linear infinite;
+}
+  .man{
+ 
+  }
+  @keyframes fly { 
+    0% {transform: translateX(-100%) }
+    100% { transform: translateX(100%) }
+  }
+  .st{
+    transform-box: fill-box;
+    transform-box: stroke-box;
+    transform-origin: center;
+    animation: rotate 2s linear infinite;
+  }
+  @keyframes rotate {
+    0% {transform: rotateZ(0deg) }
+    50% { transform: rotateZ(180deg) }
+    100% { transform: rotateZ(360deg) }
+    
+  }
